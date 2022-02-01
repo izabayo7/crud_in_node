@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/izabayo7/crud_in_node_without_db#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "express": "^4.17.2"
   }
 }
