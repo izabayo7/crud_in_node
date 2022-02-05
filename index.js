@@ -5,12 +5,7 @@ const {validateUser} = require("./utils/validations"); // import bodyparser\
 const {User} = require("./model/user.model")
 const mongoose = require('mongoose'); // import mongoose
 
-mongoose.connect("mongodb://localhost:27017/db_name", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFIndAndModify: false
-}).then(() => console.log("Connected to mongodb successfully")).catch(err => console.log(err));
+mongoose.connect("mongodb://localhost:27017/test_db").then(() => console.log("Connected to mongodb successfully")).catch(err => console.log(err));
 
 
 const users = [{
